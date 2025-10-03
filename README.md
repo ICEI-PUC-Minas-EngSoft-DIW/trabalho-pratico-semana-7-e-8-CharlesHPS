@@ -12,10 +12,10 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Charles Henrique de Paula Santos
+- Matricula: 901364
+- Proposta de projeto escolhida: Blog sobre universo
+- Breve descrição sobre seu projeto: Criação de um blog com informaçoes e cuiriosidades sobr eo universo.
 
 ## Print da Home-Page
 
