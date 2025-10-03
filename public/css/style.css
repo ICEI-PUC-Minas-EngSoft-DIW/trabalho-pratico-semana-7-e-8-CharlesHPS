@@ -1,0 +1,57 @@
+.itens-assuntos{
+    width: 20%;
+    display: inline-flex;
+    padding: 0px 100px 50px 100px;
+    
+}
+.assuntos-link{
+    text-decoration: none;
+    color: black;
+}
+
+.paginas{
+    padding: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#menu{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+}
+
+#nome-site{
+    text-align: left;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#itens-menu{
+   text-align-last: right; 
+}
+
+#apresentacao{
+    display: flex;
+    flex-direction: row;
+}
+#texto-apresentacao{
+    order: 1;
+    margin: 80px 100px 80px 100px;
+    
+}
+
+#img-inicio{
+    order: 2;
+    margin: 80px 100px 80px 150px;
+    
+}
+
+#rodape{
+    margin-left: 100px;
+}
+
+
+
+
