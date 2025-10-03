@@ -15,7 +15,7 @@ Leia o enunciado completo no Canvas.
 - Nome: Charles Henrique de Paula Santos
 - Matricula: 901364
 - Proposta de projeto escolhida: Blog sobre universo
-- Breve descrição sobre seu projeto: Criação de um blog com informaçoes e cuiriosidades sobr eo universo.
+- Breve descrição sobre seu projeto: Criação de um blog com informaçoes e cuiriosidades sobre o universo.
 
 ## Print da Home-Page
 
