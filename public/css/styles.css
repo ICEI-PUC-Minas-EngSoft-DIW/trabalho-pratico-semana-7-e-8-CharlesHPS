@@ -3,8 +3,8 @@
 Azul um pouco mais escuro menu:     rgb(15, 20, 32)
 Azul fundo site:                    rgb(18, 24, 38)
 Azul claro textos:                  rgb(46, 224, 226)
+Rosa claro botoes e icones:         rgb(192, 73, 196) 
 Branco para textos tambem:          rgb(250, 250, 250)
-Rosa claro botoes e icones:         rgb(192, 73, 196)
 
 */
 * {
@@ -26,6 +26,25 @@ img {
   height: auto;
 }
 
+.cor-azul-escuro-1{
+    color: rgb(15, 20, 32);
+}
+
+.cor-azul-escuro-2{
+    color: rgb(18, 24, 38);
+}
+
+.cor-azul-claro{
+    color: rgb(46, 224, 226);
+}
+
+.cor-rosa{
+    color: rgb(192, 73, 196);
+}
+
+.cor-branco{
+    color: rgb(250, 250, 250);
+}
 
 /*Configs padroes*/
 
@@ -39,6 +58,7 @@ body{
 }
 
 #logo-site{
+    margin-left: 80px;
     position: absolute;
     left: 0%;
 }
@@ -103,6 +123,10 @@ body{
     order: 1;
     margin: 80px 100px 80px 100px;
     
+}
+
+#titulo-inicio{
+    font-size: 40px;
 }
 
 #img-inicio{
