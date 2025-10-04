@@ -34,7 +34,7 @@ body{
 }
 
 #logo{
-    width: 60px;
+    width: 50px;
 }
 
 .itens-assuntos{
@@ -58,6 +58,15 @@ body{
     padding: 10px;
     background-color: rgb(15, 20, 32);
     display: flex;
+}
+
+#menu-desktop{
+    display: flex;
+}
+
+#lista-menu{
+    display: flex;
+    align-items: center;
 }
 
 #nome-site{
@@ -90,14 +99,9 @@ body{
     margin-left: 100px;
 }
 
-/* Telas de celular */
-@media(max-width: 450px){
+/* Telas para moveis */
+@media (max-width: 1024px){
 
-
-}
-
-/* Telas para tablets */
-@media(min-width: 768) and (max-width: 1024px){
 
 
 }
