@@ -5,6 +5,7 @@ Azul fundo site:                    rgb(18, 24, 38)
 Azul claro textos:                  rgb(46, 224, 226)
 Rosa claro botoes e icones:         rgb(192, 73, 196) 
 Branco para textos tambem:          rgb(250, 250, 250)
+Preto para detalhes                 rgb(0, 0, 0)
 
 */
 * {
@@ -63,15 +64,34 @@ body{
     left: 0%;
 }
 
-.itens-assuntos{
-    width: 20%;
+#assuntos{
+    margin: 10px 70px 10px 70px;
     display: inline-flex;
-    padding: 0px 100px 50px 100px;
+}
+
+.itens-assuntos{
+    background-color: rgb(20, 26, 40);
+    width: 19.7%;
+    display:flexbox;
+    margin: 10px;
+    border: 1px outset gray;
+    border-radius: 15px;
     
 }
-.assuntos-link{
-    text-decoration: none;
-    color: rgb(250, 250, 250);
+
+.img-assuntos{
+    border-radius: 15px;
+}
+
+.botao-assuntos{
+    background-color: rgb(46, 224, 226);
+    padding: 5px;
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer; 
+}
+.botao-assuntos, .titulo-assuntos, .texto-assuntos{
+    margin: 10px;
 }
 
 .paginas{
@@ -121,7 +141,7 @@ body{
 }
 #texto-apresentacao{
     order: 1;
-    margin: 80px 100px 80px 100px;
+    margin: 60px 80px 60px 80px;
     
 }
 
@@ -136,7 +156,7 @@ body{
 }
 
 #rodape{
-    margin-left: 100px;
+    margin: 80px 50px 20px 80px;
 }
 
 a:hover{
@@ -187,5 +207,4 @@ a:hover{
         display: flex;    
     }
     
-
 }

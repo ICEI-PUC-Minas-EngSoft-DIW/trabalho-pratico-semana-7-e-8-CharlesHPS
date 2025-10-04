@@ -15,19 +15,33 @@
                     <a id="logo-site" href="index.html"><img id="logo" src="../img/logo_all_universo.png" alt="log al universo"></a>
                     <div id="lista-menu-desktop">
                         <ul id="menu-desktop">
-                            <li><a class="paginas" href="sobre.html">Sobre</a></li>
-                            <li><a class="paginas" href="assuntos.html">Assuntos</a></li>
-                            <li><a class="paginas" href="contato.html">Contato</a></li>
+                            <li class="itens-lista-desktop">
+                                <a class="paginas" href="sobre.html">SOBRE</a>
+                            </li>
+                            <li class="itens-lista-desktop">
+                                <a class="paginas" href="assuntos.html">ASSUNTOS</a>
+                            </li>
+                            <li class="itens-lista-desktop">
+                                <a class="paginas" href="categorias.html">CATEGORIAS</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div id="itens-mobile">
                     <img onclick="abrirMenuMobile()" id="open-menu-lista" src="../img/icon_menu.png" alt="icone de menu">
                     <ul class="menu-mobile" id="id-menu-mobile" >
-                        <li onclick="fecharMenuMobile()" id="close-menu-lista"><img id="img-close-menu" src="../img/icon_x.png" alt="icone de menu"></li>
-                        <li class="itens-lista-mobile"><a class="paginas" href="sobre.html">Sobre</a></li>
-                        <li class="itens-lista-mobile"><a class="paginas" href="assuntos.html">Assuntos</a></li>
-                        <li class="itens-lista-mobile"><a class="paginas" href="contato.html">Contato</a></li>
+                        <li onclick="fecharMenuMobile()" id="close-menu-lista">
+                            <img id="img-close-menu" src="../img/icon_x.png" alt="icone de menu">
+                        </li>
+                        <li class="itens-lista-mobile">
+                            <a class="paginas" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="itens-lista-mobile">
+                            <a class="paginas" href="assuntos.html">ASSUNTOS</a>
+                        </li>
+                        <li class="itens-lista-mobile">
+                            <a class="paginas" href="categorias.html">CATEGORIAS</a>
+                        </li>
                     </ul>  
                 </div>                  
                 
@@ -38,13 +52,13 @@
 
             <div id="apresentacao">
                 <div id="texto-apresentacao">
-                    <h2 id="titulo-inicio" class="cor-branco">
+                    <h1 id="titulo-inicio" class="cor-branco">
                         DESVENDE OS MISTÉRIOS
-                    </h2>
-                    <h2 id="titulo-inicio" class="cor-rosa">
+                    </h1>
+                    <h1 id="titulo-inicio" class="cor-rosa">
                         DO UNIVERSO
-                    </h2>
-                    <p id="texto-inicio">
+                    </h1>
+                    <p id="texto-inicio" class="cor-branco">
                         Aqui vamos explorar um pedaço desse nosso universo incrivel e lindo.
                     </p>
                 </div>
@@ -53,45 +67,76 @@
 
             <div id="assuntos">
                 <div class="itens-assuntos">
-                    <a class="assuntos-link" href="#">
-                        <img src="https://picsum.photos/id/1042/300/200" alt="">
-                        <h3>                            
-                            Antes do universo
-                        </h3>
-                        <p>
-                            Antes de entender como tudo começou, entenda como era antes! 
-                            Viaje no universo de prótons, nêutrons, entre outras partículas!
-                        </p>
-                    </a>
+                    <img class="img-assuntos" src="../img/img_antes_universo.png" alt="">
+                    <h2 class="titulo-assuntos cor-branco">                            
+                        Antes do Universo
+                    </h2>
+                    <p class="texto-assuntos cor-branco">
+                        Antes de entender como tudo começou, entenda como era antes! 
+                        Viaje no universo de prótons, nêutrons, entre outras partículas!
+                    </p>
+                    <button class="botao-assuntos">
+                        Ler mais
+                    </button>
                 </div>
                 <div class="itens-assuntos">
-                    <a class="assuntos-link" href="#">
-                        <img src="https://picsum.photos/id/723/300/200" alt="">
-                        <h3>
-                            O big bang
-                        </h3>
-                        <p>
-                            O início de toda a história do universo que conhecemos e que ainda vamos conhecer.
-                        </p>
-                    </a>
+                    <img class="img-assuntos" src="../img/img_big_bang.png" alt="">
+                    <h2 class="titulo-assuntos cor-branco">                            
+                        O Big Bang
+                    </h2>
+                    <p class="texto-assuntos cor-branco">
+                        Antes de entender como tudo começou, entenda como era antes! 
+                        Viaje no universo de prótons, nêutrons, entre outras partículas!
+                    </p>
+                    <button class="botao-assuntos">
+                        Ler mais
+                    </button>
                 </div>
                 <div class="itens-assuntos">
-                    <a class="assuntos-link" href="#">
-                        <img src="https://picsum.photos/id/903/300/200" alt="">
-                        <h3>
-                            A formação do sistema solar
-                        </h3>
-                        <p>
-                            A história do nosso lar e tudo que se passou até chegar onde estamos.
-                        </p>
-                    </a>
+                    <img class="img-assuntos" src="../img/img_buraco_negro.png" alt="">
+                    <h2 class="titulo-assuntos cor-branco">                            
+                        Buraco Negro
+                    </h2>
+                    <p class="texto-assuntos cor-branco">
+                        Antes de entender como tudo começou, entenda como era antes! 
+                        Viaje no universo de prótons, nêutrons, entre outras partículas!
+                    </p>
+                    <button class="botao-assuntos">
+                        Ler mais
+                    </button>
+                </div>
+                <div class="itens-assuntos">
+                    <img class="img-assuntos" src="../img/img_via_lactea.png" alt="">
+                    <h2 class="titulo-assuntos cor-branco">                            
+                        Via Láctea
+                    </h2>
+                    <p class="texto-assuntos cor-branco">
+                        Antes de entender como tudo começou, entenda como era antes! 
+                        Viaje no universo de prótons, nêutrons, entre outras partículas!
+                    </p>
+                    <button class="botao-assuntos">
+                        Ler mais
+                    </button>
+                </div>
+                <div class="itens-assuntos">
+                    <img class="img-assuntos" src="../img/img_estrela.png" alt="">
+                    <h2 class="titulo-assuntos cor-branco">                            
+                        Estrelas
+                    </h2>
+                    <p class="texto-assuntos cor-branco">
+                        Antes de entender como tudo começou, entenda como era antes! 
+                        Viaje no universo de prótons, nêutrons, entre outras partículas!
+                    </p>
+                    <button class="botao-assuntos">
+                        Ler mais
+                    </button>
                 </div>
             </div>
         </main>
     
 
-        <footer id="rodape">
-            <p>2024 Trabalho Prático - Semana 3</p>
+        <footer id="rodape" class="cor-rosa">
+            <p>2025 Trabalho Prático - DIW</p>
         </footer>
     
     </body>
