@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All universo</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/app.js"></script>
 </head>
     <body>
 
         <header>
             <nav id="menu">
-                <div id="menu-desktop">
+                <div id="itens-desktop">
                     <a id="logo-site" href="index.html"><img id="logo" src="../img/logo_all_universo.png" alt="log al universo"></a>
-                    <ul id="lista-menu">
-                        <li><a class="paginas" href="sobre.html">Sobre</a></li>
-                        <li><a class="paginas" href="assuntos.html">Assuntos</a></li>
-                        <li><a class="paginas" href="contato.html">Contato</a></li>
-                    </ul>
+                    <div id="lista-menu-desktop">
+                        <ul id="menu-desktop">
+                            <li><a class="paginas" href="sobre.html">Sobre</a></li>
+                            <li><a class="paginas" href="assuntos.html">Assuntos</a></li>
+                            <li><a class="paginas" href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <img id="open-menu" src="../img/icon_menu.png" alt="icone de menu">
-                <div id="menu-movel">
-                    <ul id="lista-menu" class="menu-mobile">
-                        <li id="close-menu-lista"><img id="img-close-menu" src="../img/icon_x.png" alt="icone de menu"></li>
-                        <li><a class="paginas" href="sobre.html">Sobre</a></li>
-                        <li><a class="paginas" href="assuntos.html">Assuntos</a></li>
-                        <li><a class="paginas" href="contato.html">Contato</a></li>
-                    </ul>                    
-                </div>
+                <div id="itens-mobile">
+                    <img onclick="abrirMenuMobile()" id="open-menu-lista" src="../img/icon_menu.png" alt="icone de menu">
+                    <ul class="menu-mobile" id="id-menu-mobile" >
+                        <li onclick="fecharMenuMobile()" id="close-menu-lista"><img id="img-close-menu" src="../img/icon_x.png" alt="icone de menu"></li>
+                        <li class="itens-lista-mobile"><a class="paginas" href="sobre.html">Sobre</a></li>
+                        <li class="itens-lista-mobile"><a class="paginas" href="assuntos.html">Assuntos</a></li>
+                        <li class="itens-lista-mobile"><a class="paginas" href="contato.html">Contato</a></li>
+                    </ul>  
+                </div>                  
+                
             </nav>
         </header>
 

@@ -35,6 +35,12 @@ body{
 
 #logo{
     width: 50px;
+    
+}
+
+#logo-site{
+    position: absolute;
+    left: 0%;
 }
 
 .itens-assuntos{
@@ -55,31 +61,38 @@ body{
 }
 
 #menu{
+
+    height: 70px;
     padding: 10px;
     background-color: rgb(15, 20, 32);
     display: flex;
+    
+}
+
+#itens-desktop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 #menu-desktop{
     display: flex;
 }
 
-#lista-menu{
-    display: flex;
-    align-items: center;
-}
-
-#open-menu{
+#open-menu-lista{
     width: 30px;
+    cursor: pointer;
+    
 }
 
 #img-close-menu{
     width: 30px;
 }
 
-#nome-site{
-    text-align: left;
-    text-decoration: none;
+#itens-mobile{
+    display: none;    
 }
 
 #apresentacao{
@@ -107,20 +120,40 @@ body{
 
     .menu-mobile{
         overflow: hidden;
-        width: 300px;
+        width: 0px;
         height: 100dvh;
-        padding: 1rem;
+        padding: 0rem;
         position: absolute;
         top: 0;
         right: 0;
         background-color: rgb(15, 20, 32);
         flex-direction: column;
-    }    
+        text-align: center;
+        transition: 0,6s;
+        
+    }   
+    
+    .menu-mobile li:first-child{
+        text-align: start;
+    }
     
     #close-menu-lista{
         align-self: flex-start;
+        cursor: pointer;
     }
     
+    .menu-ativo{
+        width: 300px;
+        padding: 1rem;
+    }
+
+    #menu-desktop{
+        display: none;
+    }
+
+    #itens-mobile{
+        display: flex;    
+    }
     
 
 }
