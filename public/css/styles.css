@@ -1,3 +1,42 @@
+/* Reset básico de CSS */
+/* cores padão site
+Azul um pouco mais escuro menu:     rgb(15, 20, 32)
+Azul fundo site:                    rgb(18, 24, 38)
+Azul claro textos:                  rgb(46, 224, 226)
+Branco para textos tambem:          rgb(250, 250, 250)
+Rosa claro botoes e icones:          rgb(192, 73, 196)
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos no tamanho total do elemento */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-weight: normal; /* Garante que títulos não sejam negrito por padrão */
+}
+
+ol, ul {
+  list-style: none; /* Remove marcadores de lista */
+}
+
+img {
+  max-width: 100%; /* Torna as imagens responsivas */
+  height: auto;
+}
+
+
+/*Configs padroes*/
+
+body{
+    background-color: rgb(18, 24, 38);
+}
+
+#logo{
+    width: 60px;
+}
+
 .itens-assuntos{
     width: 20%;
     display: inline-flex;
@@ -6,19 +45,18 @@
 }
 .assuntos-link{
     text-decoration: none;
-    color: black;
+    color: rgb(250, 250, 250);
 }
 
 .paginas{
     padding: 20px;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(46, 224, 226);
 }
 
 #menu{
     padding: 10px;
-    border-radius: 10px;
-    background-color: black;
+    background-color: rgb(15, 20, 32);
     display: flex;
 }
 
@@ -52,6 +90,14 @@
     margin-left: 100px;
 }
 
+/* Telas de celular */
+@media(max-width: 450px){
 
 
+}
 
+/* Telas para tablets */
+@media(min-width: 768) and (max-width: 1024px){
+
+
+}
