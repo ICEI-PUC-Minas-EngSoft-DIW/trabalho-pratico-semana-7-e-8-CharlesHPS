@@ -115,6 +115,10 @@ body{
     margin-left: 100px;
 }
 
+a:hover{
+    color: rgb(192, 73, 196)
+}
+
 /* Telas para moveis */
 @media (max-width: 1024px){
 
@@ -129,9 +133,13 @@ body{
         background-color: rgb(15, 20, 32);
         flex-direction: column;
         text-align: center;
-        transition: 0,6s;
+        transition: 0.3s;
         
     }   
+
+    .itens-lista-mobile {
+        padding: 8px;
+    }
     
     .menu-mobile li:first-child{
         text-align: start;
