@@ -9,19 +9,21 @@ let resumo = [
 ]
 
 let conteudo = [
-    {"id": 1, "titulo": "Antes do Universo", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": "", "conteudo5": ""},
-    {"id": 2, "titulo": "O Big Bang", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": "", "conteudo5": ""},
-    {"id": 3, "titulo": "Buraco Negro", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": "", "conteudo5": ""},
-    {"id": 4, "titulo": "Via Láctea", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": "", "conteudo5": ""},
-    {"id": 5, "titulo": "Estrelas", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": "", "conteudo5": ""}
+    {"id": 1, "titulo": "Antes do Universo", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": ""},
+    {"id": 2, "titulo": "O Big Bang", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": ""},
+    {"id": 3, "titulo": "Buraco Negro", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": ""},
+    {"id": 4, "titulo": "Via Láctea", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": ""},
+    {"id": 5, "titulo": "Estrelas", "conteudo1": "", "conteudo2": "", "conteudo3": "", "conteudo4": ""}
 ]
 
+/* Função para imprimir dados na tela inicial/index */
 function carregarDadosIndex(){
     let assuntos = document.getElementById('assuntos');
     let dadosAssuntos = ''; 
 
     for(let i = 0; i < resumo.length; i++){
         let titulo = resumo[i]; 
+        let idCarregar = titulo.id;
         let imagemCarregar = titulo.imagem;
         let tituloCarregar = titulo.titulo;
         let resumoCarregar = titulo.resumo;
@@ -33,13 +35,39 @@ function carregarDadosIndex(){
                     '<p class="texto-assuntos cor-branco">'+
                         resumoCarregar +
                     '</p>'+
-                    '<button onclick="exibirConteudo()" class="botao-assuntos">'+
+                    '<button onclick="exibirConteudo('+ idCarregar +')" class="botao-assuntos">'+
                         'Ler mais'+
                     '</button>'+
                 '</div>';   
     }
 
     assuntos.innerHTML = dadosAssuntos;
+}
+
+/*Função para exibir conteudo de acordo com o item que foi clicado*/ 
+function exibirConteudo(paginaAtual){
+    /* redireciona para a pagina solicitada */
+    window.location.href = 'conteudo.html';
+
+    let assuntos = document.getElementById('');
+    let dadosEnviar = '';
+
+
+    for(let i = 0; i < conteudo.length; i++){
+        let dadoConteudo = conteudo[i];
+        let idCarregar = dadoConteudo.id;
+        let tituloCarregar = dadoConteudo.titulo;
+        let conteudo1Carregar = dadoConteudo.conteudo1;
+        let conteudo2Carregar = dadoConteudo.conteudo2;
+        let conteudo3Carregar = dadoConteudo.conteudo3;
+        let conteudo4Carregar = dadoConteudo.conteudo4;
+        
+        if (paginaAtual == conte1){
+
+        } 
+    }
+
+
 }
 
 /*Função para abrir o menu mobile*/
@@ -94,25 +122,3 @@ function menuPagina(){
 
 }
 
-/*Função para exibir conteudo de acordo com o item que foi clicado*/ 
-function exibirConteudo(paginaAtual){
-
-    window.location.href = 'conteudo.html';
-
-    if (paginaAtual == conte1){
-
-    } else if (paginaAtual == conte2) {
-
-    } else if (paginaAtual == conte3) {
-
-    } else if (paginaAtual == conte4) {
-
-    } else if (paginaAtual == conte5) {
-
-    } else {
-
-        error
-
-    }
-
-}
