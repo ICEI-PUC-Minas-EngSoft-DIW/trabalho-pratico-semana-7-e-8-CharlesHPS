@@ -22,10 +22,10 @@ function menuPagina(){
                     '<div id="lista-menu-desktop">'+
                         '<ul id="menu-desktop">'+
                             '<li class="itens-lista-desktop">'+
-                                '<a class="paginas" href="sobre.html">SOBRE</a>'+
+                                '<a class="paginas" href="categorias.html">CATEGORIAS</a>'+
                             '</li>'+
                             '<li class="itens-lista-desktop">'+
-                                '<a class="paginas" href="categorias.html">CATEGORIAS</a>'+
+                                '<a class="paginas" href="sobre.html">SOBRE</a>'+
                             '</li>'+
                         '</ul>'+
                     '</div>'+
@@ -37,10 +37,10 @@ function menuPagina(){
                             '<img id="img-close-menu" src="../img/icon_x.png" alt="icone de menu">'+
                         '</li>'+
                         '<li class="itens-lista-mobile">'+
-                            '<a class="paginas" href="sobre.html">SOBRE123</a>'+
+                            '<a class="paginas" href="categorias.html">CATEGORIAS</a>'+
                         '</li>'+
                         '<li class="itens-lista-mobile">'+
-                            '<a class="paginas" href="categorias.html">CATEGORIAS</a>'+
+                            '<a class="paginas" href="sobre.html">SOBRE123</a>'+
                         '</li>'+
                     '</ul>'+
                 '</div>'+
