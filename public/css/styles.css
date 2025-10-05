@@ -160,7 +160,7 @@ body{
 }
 
 #titulo-inicio{
-    font-size: 40px;
+    font-size: 50px;
 }
 
 #rodape{
@@ -180,12 +180,18 @@ a:hover{
 }
 
 #texto-sobre{
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 
 #lista-sobre{
-    list-style: circle;
-    margin: 10px 15px 10px 15px;
+    list-style:disc;
+    margin: 10px 20px 10px 60px;
+    font-size: 25px;
+}
+li::marker {
+  color: rgb(46, 224, 226);
+  font-size: 30px;
 }
 
 #lista-itens-sobre{
@@ -199,16 +205,23 @@ a:hover{
 #itens-inicio-sobre{
     display: flex;
     align-items: center;
+       
 }
 
 #img-sobre{
     order: 1;
     width: 25%;
+    margin: 20px 50px 20px 0px; 
     
 }
 
 .texto-inicio-sobre{
     order: 2;
+}
+
+#titulo-lista-sobre{
+    font-size: 35px;
+    margin: 20px 10px 20px 0px;
 }
 
 /* Telas para moveis */
