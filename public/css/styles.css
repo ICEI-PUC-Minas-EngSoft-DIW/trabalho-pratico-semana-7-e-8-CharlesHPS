@@ -163,6 +163,10 @@ a:hover{
     color: rgb(192, 73, 196)
 }
 
+.botao-assuntos:hover{
+    background-color: rgb(192, 73, 196)
+}
+
 /* Telas para moveis */
 @media (max-width: 1024px){
 
