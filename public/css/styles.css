@@ -53,10 +53,10 @@ body{
     background-color: rgb(18, 24, 38);
 }
 
-#body-sobre{
+.body{
     background-image: url("../img/img_fundo_sobre.png");
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 400px;
     background-position: right; 
     
 }
@@ -160,7 +160,7 @@ body{
 }
 
 #titulo-inicio{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #rodape{
@@ -181,13 +181,13 @@ a:hover{
 
 #texto-sobre{
     margin-top: 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #lista-sobre{
     list-style:disc;
     margin: 10px 20px 10px 60px;
-    font-size: 25px;
+    font-size: 20px;
 }
 li::marker {
   color: rgb(46, 224, 226);
@@ -210,9 +210,8 @@ li::marker {
 
 #img-sobre{
     order: 1;
-    width: 25%;
+    width: 15%;
     margin: 20px 50px 20px 0px; 
-    
 }
 
 .texto-inicio-sobre{
@@ -220,7 +219,7 @@ li::marker {
 }
 
 #titulo-lista-sobre{
-    font-size: 35px;
+    font-size: 30px;
     margin: 20px 10px 20px 0px;
 }
 
