@@ -19,7 +19,7 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![imagem da pagina principal](/public/img/home-page.PNG)
 
 ## Print da página de detalhes do item
 
@@ -28,16 +28,11 @@ Leia o enunciado completo no Canvas.
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
-  {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
-  }
+let resumo = [
+    {"id": 1, "titulo": "Antes do Universo", "imagem": "../img/img_antes_universo.png", "resumo": "Antes de entender como tudo começou, entenda como era antes! Viaje no universo de prótons, nêutrons, entre outras partículas!"},
+    {"id": 2, "titulo": "O Big Bang", "imagem": "../img/img_big_bang.png", "resumo": "Não foi uma explosão, mas o nascimento do tempo. Descubra o que realmente aconteceu no primeiro microssegundo e como a expansão do cosmos moldou tudo o que você vê. O início de tudo é mais estranho do que parece."},
+    {"id": 3, "titulo": "Buraco Negro", "imagem": "../img/img_buraco_negro.png", "resumo": "Eles são os devoradores silenciosos do cosmos. O que acontece com a matéria que cruza o ponto sem retorno? Desvende o enigma da gravidade extrema e dos segredos que a luz não pode revelar."},
+    {"id": 4, "titulo": "Via Láctea", "imagem": "../img/img_via_lactea.png", "resumo": "Nossa casa é um caos organizado de 200 bilhões de estrelas, mas você conhece o gigante no centro? Explore a majestade da nossa galáxia e o buraco negro que comanda sua dança."},
+    {"id": 5, "titulo": "Estrelas", "imagem": "../img/img_estrela.png", "resumo": "São as fornalhas que criaram todos os elementos do seu corpo. Como elas nascem, vivem e morrem de formas espetaculares? Entenda por que somos, literalmente, poeira estelar."}
 ]
 ```
