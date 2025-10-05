@@ -149,6 +149,7 @@ body{
     font-size: 40px;
 }
 
+
 #img-inicio{
     order: 2;
     margin: 80px 100px 80px 150px;
@@ -166,6 +167,25 @@ a:hover{
 .botao-assuntos:hover{
     background-color: rgb(192, 73, 196)
 }
+
+#titulo-sobre{
+    margin: 60px 80px 60px 80px;
+}
+
+#texto-sobre{
+    margin-top: 20px;
+}
+
+#lista-sobre{
+    list-style: circle;
+    margin: 10px 15px 10px 15px;
+}
+
+#lista-itens-sobre{
+    margin-top: 15px;
+}
+
+
 
 /* Telas para moveis */
 @media (max-width: 1024px){
