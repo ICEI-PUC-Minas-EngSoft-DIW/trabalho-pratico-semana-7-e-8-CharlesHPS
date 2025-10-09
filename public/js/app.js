@@ -91,19 +91,12 @@ function exibirConteudo(pagClicada){
                 '</div>'+
             '</div>'+
         '</div>';
-       
-    
+        
+    window.location.href = 'conteudo.html';
+
     assuntos.innerHTML = dadosEnviar;
 
-    
-    window.location.href = 'conteudo.html';
-    
-
 }
-
-    
-
-
 
 /*Função para abrir o menu mobile*/
 function abrirMenuMobile(){
