@@ -143,7 +143,10 @@ let conteudo = [
     }
 ]
 
+//variaveis globais
 let pagClicada = 0;
+
+let count = 1;
 
 /* Função para imprimir dados na tela inicial/index */
 function carregarDadosIndex(){
@@ -269,6 +272,20 @@ function menuPagina(){
 
 }
 
+// função que muda altomaticamente os slides da pagina index
+function proximaimg(){
+    count++;
+    if(count>5){
+        count = 1;
+    }
+
+    document.getElementById("radio-"+ count).checked = true;
+}
+
+setInterval( function(){
+    proximaimg();
+}, 4000);
+
 document.addEventListener('DOMContentLoaded', (event) => {
     // 1. Tenta recuperar o conteúdo armazenado
     const conteudoHTML = localStorage.getItem('conteudoParaExibir');
@@ -286,3 +303,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.error('Conteúdo não encontrado no localStorage ou elemento main-conteudo ausente.');
     }
 });
+
+document.getElementById("radio-1").checked = true;
