@@ -72,6 +72,23 @@ body{
     left: 0%;
 }
 
+#slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+#slides input {
+    display: none;
+}
+
 #assuntos{
     margin: 10px 70px 10px 70px;
     display: inline-flex;
