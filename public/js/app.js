@@ -202,7 +202,7 @@ function exibirConteudo(pagClicada) {
 
     // Geração da string HTML (dadosEnviar)
     let dadosEnviar = `
-        <div id="apresentacao">
+        <div id="apresentacao-conteudo">
             <img id="img-inicio" src="${imgCarregar}" alt="Imagem de ${tituloCarregar}">
             <div id="container-resumo-conteudo">
                 <h1 id="titulo-inicio-conteudo" class="titulo-inicio-conteudo cor-branco">${tituloCarregar}</h1>
