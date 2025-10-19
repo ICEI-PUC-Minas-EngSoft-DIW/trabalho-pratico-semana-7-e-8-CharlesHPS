@@ -93,6 +93,7 @@ body{
     width: 25%;
     position: relative;
     transition: 2s;
+    cursor: pointer;
 }
 
 .img-slide img {
@@ -100,10 +101,22 @@ body{
     height: 400px;
 }
 
+.img-slide-config{
+    border-radius: 30px;
+}
+
+.texto-slide{
+    font-size: 30px;
+    position: absolute;
+    top: 330px;
+    margin-left: 30px;
+    
+}
+
 .escolher-slide{
     position: absolute;
     width: 800px;
-    margin-top: -40px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
@@ -180,7 +193,7 @@ body{
 .mudar-slide-auto{
     position: absolute;
     width: 800px;
-    margin-top: 360px;
+    margin-top: 430px;
     display: flex;
     justify-content: center;
 }
@@ -261,7 +274,13 @@ body{
 #apresentacao{
     display: flex;
     flex-direction: row;
+    margin: 30px 0px 0px 80px;
 }
+
+#container-resumo-conteudo{
+   margin: 20px 80px 20px 60px;     
+}
+
 #texto-apresentacao{
     order: 1;
     margin: 60px 80px 60px 80px;
@@ -273,8 +292,15 @@ body{
 }
 
 .titulo-inicio-conteudo{
-    margin: 30px 0px 0px 80px;
+    margin-bottom: 40px;
     font-size: 40px;
+}
+
+#img-inicio{
+    margin: 20px 20px 20px 0px;
+    width: 580px;
+    height: 435;
+    border-radius: 100px;
 }
 
 #rodape{
@@ -355,6 +381,10 @@ li::marker {
 
 .paragrafo{
     font-size: 20px;    
+}
+
+#titulo-assuntos{
+    margin: 60px 80px 30px 80px;
 }
 
 /* Telas para moveis */

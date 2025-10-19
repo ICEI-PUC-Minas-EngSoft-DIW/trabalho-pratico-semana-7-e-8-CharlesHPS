@@ -160,18 +160,19 @@ function carregarDadosIndex(){
         let tituloCarregar = titulo.titulo;
         let resumoCarregar = titulo.resumo;
 
-        dadosAssuntos += `<div class="itens-assuntos">
-                    <img class="img-assuntos" src="${imagemCarregar}" alt="imagem representativa do inicio do universo">
-                    <h2 class="titulo-assuntos cor-branco">                   
-                        ${tituloCarregar}
-                    </h2>
-                    <p class="texto-assuntos cor-branco">
-                        ${resumoCarregar} 
-                    </p>
-                    <button onclick="exibirConteudo(${idCarregar})" class="botao-assuntos">
-                        Ler mais
-                    </button>
-                </div>`;   
+        dadosAssuntos += `
+            <div class="itens-assuntos">
+                <img class="img-assuntos" src="${imagemCarregar}" alt="imagem representativa do inicio do universo">
+                <h2 class="titulo-assuntos cor-branco">                   
+                    ${tituloCarregar}
+                </h2>
+                <p class="texto-assuntos cor-branco">
+                    ${resumoCarregar} 
+                </p>
+                <button onclick="exibirConteudo(${idCarregar})" class="botao-assuntos">
+                    Ler mais
+                </button>
+            </div>`;   
     }
 
     assunto.innerHTML = dadosAssuntos;
@@ -184,13 +185,15 @@ function exibirConteudo(pagClicada) {
     // Acesso aos dados 
     // Guardando o json de conteudo em dadoConteudo
     let dadoConteudo = conteudo[pagClicada];
+    let dadoResumo = resumo[pagClicada];
     
     // Verificação de segurança: Se os dados não existirem mostra erro.
     if (!dadoConteudo) {
         console.error("Conteúdo não encontrado para a chave:", pagClicada);
         return; 
     }
-
+    let imgCarregar = dadoResumo.imagem;
+    let resumoCarregar = dadoResumo.resumo;
     let tituloCarregar = dadoConteudo.titulo;
     let tituloConteudo1Carregar = dadoConteudo.tituloConteudo1;
     let conteudo1Carregar = dadoConteudo.conteudo1;
@@ -198,9 +201,13 @@ function exibirConteudo(pagClicada) {
     let conteudo2Carregar = dadoConteudo.conteudo2;
 
     // Geração da string HTML (dadosEnviar)
-    let dadosEnviar = `<div id="apresentacao">
-            <h1 id="titulo-inicio-conteudo" class="titulo-inicio-conteudo cor-branco">${tituloCarregar}</h1>
-            <img id="img-inicio" src="${dadoConteudo.imagemUrl || ''}" alt="Imagem de ${tituloCarregar}">
+    let dadosEnviar = `
+        <div id="apresentacao">
+            <img id="img-inicio" src="${imgCarregar}" alt="Imagem de ${tituloCarregar}">
+            <div id="container-resumo-conteudo">
+                <h1 id="titulo-inicio-conteudo" class="titulo-inicio-conteudo cor-branco">${tituloCarregar}</h1>
+                <p id="resumo-conteudo" class="cor-branco"> ${resumoCarregar} </p>
+            </div>
         </div>
         
         <div id="temas">
@@ -246,29 +253,30 @@ function fecharMenuMobile(){
 
 /*Função para exibir o cabeçalho em todas as paginas e reutilizar o codigo*/
 function menuPagina(){
-    document.getElementById('cabecalho').innerHTML = `<nav id="menu">
-                <div id="itens-desktop">
-                    <a id="logo-site" href="index.html"><img id="logo" src="../img/logo_all_universo.png" alt="log al universo"></a>
-                    <div id="lista-menu-desktop">
-                        <ul id="menu-desktop">
-                            <li class="itens-lista-desktop">
-                                <a class="paginas" href="sobre.html">SOBRE</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="itens-mobile">
-                    <img onclick="abrirMenuMobile()" id="open-menu-lista" src="../img/icon_menu.png" alt="icone de menu">
-                    <ul class="menu-mobile" id="id-menu-mobile" >
-                        <li id="close-menu-lista">
-                            <img onclick="fecharMenuMobile()" id="img-close-menu" src="../img/icon_x.png" alt="icone de menu">
-                        </li>
-                        <li class="itens-lista-mobile">
+    document.getElementById('cabecalho').innerHTML = `
+        <nav id="menu">
+            <div id="itens-desktop">
+                <a id="logo-site" href="index.html"><img id="logo" src="../img/logo_all_universo.png" alt="log al universo"></a>
+                <div id="lista-menu-desktop">
+                    <ul id="menu-desktop">
+                        <li class="itens-lista-desktop">
                             <a class="paginas" href="sobre.html">SOBRE</a>
                         </li>
                     </ul>
                 </div>
-            </nav>`;
+            </div>
+            <div id="itens-mobile">
+                <img onclick="abrirMenuMobile()" id="open-menu-lista" src="../img/icon_menu.png" alt="icone de menu">
+                <ul class="menu-mobile" id="id-menu-mobile" >
+                    <li id="close-menu-lista">
+                        <img onclick="fecharMenuMobile()" id="img-close-menu" src="../img/icon_x.png" alt="icone de menu">
+                    </li>
+                    <li class="itens-lista-mobile">
+                        <a class="paginas" href="sobre.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>`;
 
 }
 
@@ -289,7 +297,7 @@ setInterval( function(){
 document.addEventListener('DOMContentLoaded', (event) => {
     // 1. Tenta recuperar o conteúdo armazenado
     const conteudoHTML = localStorage.getItem('conteudoParaExibir');
-    const mainConteudo = document.getElementById('main-conteudo');
+    const mainConteudo = document.getElementById('conteudo-pag');
 
     if (conteudoHTML && mainConteudo) {
         // 2. Injeta o HTML recuperado no elemento principal
@@ -302,6 +310,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
         mainConteudo.innerHTML = '<h1>Erro: Conteúdo não carregado.</h1>';
         console.error('Conteúdo não encontrado no localStorage ou elemento main-conteudo ausente.');
     }
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+    
+    document.getElementById('slide-1').addEventListener('click', function(){
+        exibirConteudo(0);
+    });
+
+    document.getElementById('slide-2').addEventListener('click', function(){
+        exibirConteudo(1);
+    });
+
+    document.getElementById('slide-3').addEventListener('click', function(){
+        exibirConteudo(2);
+    });
+
+    document.getElementById('slide-4').addEventListener('click', function(){
+        exibirConteudo(3);
+    });
+
+    document.getElementById('slide-5').addEventListener('click', function(){
+        exibirConteudo(4);
+    });
+
 });
 
 document.getElementById("radio-1").checked = true;
